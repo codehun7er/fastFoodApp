@@ -7,7 +7,6 @@
   [![Expo](https://img.shields.io/badge/Expo-53.0.20-black.svg)](https://expo.dev/)
   [![TypeScript](https://img.shields.io/badge/TypeScript-5.8.3-blue.svg)](https://typescriptlang.org/)
   [![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3.4.17-38B2AC.svg)](https://tailwindcss.com/)
-  [![License](https://img.shields.io/badge/License-Private-red.svg)]()
 </div>
 
 ## 🌟 Overview
