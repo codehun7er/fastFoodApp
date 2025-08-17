@@ -74,16 +74,6 @@ const RootLayout = () => {
 					)
 				}}
 			/>
-
-			<Tabs.Screen
-				name='profile'
-				options={{
-					title: 'Profile',
-					tabBarIcon: ({ focused }) => (
-						<TabBarIcon focused={focused} icon={images.person} title='Profile' />
-					)
-				}}
-			/>
 		</Tabs>
 	);
 };
