@@ -1,8 +1,10 @@
+import { useCartStore } from '@/store/cart.store';
 import { MenuItem } from '@/type';
 import { Image, Platform, Text, TouchableOpacity } from 'react-native';
 
 const MenuCard = ({ item }: { item: MenuItem }) => {
-	const { name, imageUrl, price, rating, calories, protein, description } = item;
+	const { $id, name, imageUrl, price } = item;
+	const { addItem } = useCartStore();
 
 	return (
 		<TouchableOpacity
@@ -17,7 +19,9 @@ const MenuCard = ({ item }: { item: MenuItem }) => {
 
 			<Text className='body-regular text-gray-200 mb-4'>From ${price}</Text>
 
-			<TouchableOpacity onPress={() => {}}>
+			<TouchableOpacity
+				onPress={() => addItem({ id: $id, name, imageUrl, price, customizations: [] })}
+			>
 				<Text className='paragraph-bold text-primary'>Add to Cart +</Text>
 			</TouchableOpacity>
 		</TouchableOpacity>

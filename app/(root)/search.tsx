@@ -4,7 +4,7 @@ import useAppwrite from '@/lib/useAppwrite';
 import { Category, MenuItem } from '@/type';
 import cn from 'clsx';
 import { useLocalSearchParams } from 'expo-router';
-import { useEffect, useMemo } from 'react';
+import { useEffect } from 'react';
 import { FlatList, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
